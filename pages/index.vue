@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1 class="text-3xl font-bold text-red-500">Hello World</h1>
+  <div class="bg-slate-800">
+    <img src="../assets/meTwo.png" alt="meTwo" class="w-1/2" >
   </div>
 </template>
