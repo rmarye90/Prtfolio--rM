@@ -1,12 +1,13 @@
 <template>
-  <section>
+  <div class="bg-slate-800 h-screen text-stone-100">
     <header>
       <nav class="flex items-center">
-        <div class="w-48 ml-32">
-          <NuxtLink to="/" class="font-poppins text-3xl">-RM *</NuxtLink>
+        <div class="w-48 mx-32">
+          <NuxtLink to="/" class="font-poppins text-3xl font-bold">-RM *</NuxtLink>
         </div>
-        <div class="flex gap-8">
+        <div class="flex gap-20 font-parkinsans">
           <NuxtLink to="/about">About</NuxtLink>
+          <NuxtLink to="/projects">Projects</NuxtLink>
           <NuxtLink to="/contact">Contact</NuxtLink>
         </div>
       </nav>
@@ -14,10 +15,10 @@
     <main>
       <slot />
     </main>
-    <footer>
+    <footer class="font-parkinsans">
       <NuxtLink to="/about">About</NuxtLink>
       <NuxtLink to="/contact">Contact</NuxtLink>
     </footer>
-  </section>
+  </div>
 </template>
 

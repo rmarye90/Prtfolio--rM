@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     families: [
       { name: 'afterSmile', provider: 'local' },
       { name: 'poppins', provider: 'local' },
+      { name: 'parkinsans', provider: 'local' },
     ]
   }
 });
