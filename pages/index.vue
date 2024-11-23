@@ -6,7 +6,11 @@
     >
       <!-- Conteneur de gauche pour le texte -->
       <div class="w-1/2 space-y-6">
-        <h1 class="font-afterSmile text-9xl">Developpeuse Web</h1>
+        <h1 class="font-afterSmile text-9xl">
+          <span class="animate-gradient bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            Developpeuse Web
+          </span>
+          </h1>
         <p class="font-parkinsans text-xl text-gray-300">
           Frontend passionné par la création d'expériences numériques
           uniques
@@ -63,3 +67,25 @@
     </div>
   </div>
 </template>
+
+<style>
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient 4s linear infinite;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-slate-800 h-screen text-stone-100">
     <header>
-      <nav class="flex items-center">
+      <nav class="flex items-center pt-6">
         <div class="w-48 mx-32">
           <NuxtLink to="/" class="font-poppins text-3xl font-bold">-RM *</NuxtLink>
         </div>
