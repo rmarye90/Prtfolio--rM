@@ -1,39 +1,38 @@
 <template>
   <div class="bg-slate-800 h-screen text-stone-100">
     <header class="fixed top-0 w-full bg-slate-800/95 backdrop-blur-sm z-50">
-      <nav
-        class="mx-auto flex h-20 max-w-7xl items-center justify-between px-8"
-      >
-        <div class="relative">
-          <NuxtLink
-            to="/"
-            class="group relative font-poppins text-3xl font-bold"
-          >
+      <nav class="flex h-20 items-center justify-between px-12">
+        <div class="relative w-1/4">
+          <NuxtLink to="/" class="group relative flex items-center">
             <NuxtImg
               src="/logo.png"
               alt="logo"
-              class="relative z-10 scale-60 transition-transform hover:scale-105"
+              width="250"
+              height="250"
+              class="relative z-10 transition-transform hover:scale-105"
             />
             <span
               class="absolute -bottom-1 left-0 h-3 w-0 bg-indigo-500/20 transition-all duration-300 group-hover:w-full"
             />
           </NuxtLink>
         </div>
-        <div class="flex gap-20 font-parkinsans">
-          <NuxtLink
-            v-for="link in navigationLinks"
-            :key="link.path"
-            :to="link.path"
-            class="group relative overflow-hidden"
-          >
-            <span class="relative z-10">{{ link.name }}</span>
-            <span
-              class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-indigo-500 to-purple-500 transition-all duration-300 group-hover:w-full"
-            />
-          </NuxtLink>
+        <div class="flex-1 flex justify-center font-parkinsans">
+          <div class="flex gap-20">
+            <NuxtLink
+              v-for="link in navigationLinks"
+              :key="link.path"
+              :to="link.path"
+              class="group relative overflow-hidden"
+            >
+              <span class="relative z-10">{{ link.name }}</span>
+              <span
+                class="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-indigo-500 to-purple-500 transition-all duration-300 group-hover:w-full"
+              />
+            </NuxtLink>
+          </div>
         </div>
         <!--réseaux sociaux -->
-        <div class="flex gap-6">
+        <div class="w-1/4 flex justify-end gap-6">
           <a
             href="https://github.com/rmarye90"
             target="_blank"
