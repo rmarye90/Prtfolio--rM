@@ -6,7 +6,7 @@
     >
       <!-- Conteneur de gauche pour le texte -->
       <div class="w-1/2 space-y-6">
-        <h1 class="font-afterSmile text-9xl">
+        <h1 class="font-parkinsans text-8xl">
           <span class="animate-gradient bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
             Developpeuse Web
           </span>
@@ -67,6 +67,7 @@
     </div>
   </div>
 </template>
+
 
 <style>
 @keyframes gradient {
