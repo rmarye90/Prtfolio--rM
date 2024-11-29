@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
+    "@nuxt/icon"
   ],
   fonts: {
     families: [

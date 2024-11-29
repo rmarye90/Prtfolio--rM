@@ -20,13 +20,13 @@
         <div class="flex gap-4 pt-6">
           <NuxtLink
             to="/projects"
-            class="rounded-xl border-gray-600 px-6 py-3 font-parkinsans transition-colors hover:bg-fuchsia-700 shadow-md shadow-purple-200"
+            class="rounded-xl border-fuchsia-500 border-2 px-6 py-3 font-parkinsans transition-colors hover:border-white shadow-md"
           >
             Voir mes projets
           </NuxtLink>
           <NuxtLink
             to="/contact"
-            class="flex items-center gap-2 rounded-xl border border-gray-600 px-6 py-3 font-parkinsans transition-colors hover:border-gray-500 shadow-md shadow-fuchsia-400"
+            class="flex items-center gap-2 rounded-xl px-6 py-3 font-parkinsans transition-colors hover:bg-transparent hover:border-white hover:border-2 bg-fuchsia-500"
           >
             Me contacter
           </NuxtLink>
