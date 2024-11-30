@@ -1,5 +1,7 @@
 <template>
+  <!-- Container principal -->
   <div class="bg-slate-800 h-screen text-stone-100">
+    <!-- Header -->
     <header class="fixed top-0 w-full bg-slate-800/95 backdrop-blur-sm z-50">
       <nav class="flex h-20 items-center justify-between px-12">
         <div class="relative w-1/4">
@@ -60,10 +62,6 @@
     <main>
       <slot />
     </main>
-    <footer class="font-parkinsans">
-      <NuxtLink to="/about">About</NuxtLink>
-      <NuxtLink to="/contact">Contact</NuxtLink>
-    </footer>
   </div>
 </template>
 

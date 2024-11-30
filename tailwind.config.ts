@@ -9,6 +9,7 @@ export default {
         afterSmile: ["AfterSmile"],
         parkinsans: ["Parkinsans"],
       },
+
       animation: {
         float: 'float 6s ease-in-out infinite',
         'float-delay': 'float 6s ease-in-out infinite 2s',      
