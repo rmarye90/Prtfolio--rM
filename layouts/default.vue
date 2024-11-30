@@ -5,12 +5,11 @@
     <header class="fixed top-0 w-full bg-slate-800/95 backdrop-blur-sm z-50">
       <nav class="flex h-20 items-center justify-between px-12">
         <div class="relative w-1/4">
-          <NuxtLink to="/" class="group relative flex items-center w-52 h-28">
+          <NuxtLink to="/" class="group relative flex items-center w-full">
             <NuxtImg
               src="/logo.png"
               alt="logo"
-              width="250"
-              height="250"
+              width="150px"
               class="relative z-10 transition-transform hover:scale-105"
             />
           </NuxtLink>
@@ -59,7 +58,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="bg-slate-800">
       <slot />
     </main>
   </div>
@@ -67,8 +66,8 @@
 
 <script setup lang="ts">
 const navigationLinks = [
-  { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
-  { name: "Contact", path: "/contact" },
+  { name: "About", path: "#about" },
+  { name: "Projects", path: "#projects" },
+  { name: "Contact", path: "#contact" },
 ];
 </script>

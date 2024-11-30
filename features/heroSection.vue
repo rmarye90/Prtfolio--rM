@@ -2,8 +2,9 @@
   <div class="container mx-auto px-4 py-12">
     <!-- Section principale avec l'image -->
     <div
-      class="flex min-h-[calc(100vh-200px)] items-center justify-between gap-8"
+      class="flex flex-col min-h-[calc(100vh-80px)] items-center justify-center gap-8"
     >
+    <div class="flex gap-8 items-center h-[720px]">
       <!-- Conteneur de gauche pour le texte -->
       <div class="w-1/2 space-y-6">
         <h1 class="font-parkinsans text-8xl">
@@ -34,7 +35,7 @@
         </div>
       </div>
 
-      <div class="relative w-1/2">
+      <div class="relative w-1/2 h-full">
         <!-- Cercle bg image -->
         <div
           class="absolute right-10 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-indigo-600/10"
@@ -48,7 +49,7 @@
         <img
           src="../assets/meTwo.png"
           alt="Photo de profil"
-          class="relative z-10 mx-auto h-auto w-full max-w-lg object-contain"
+          class="relative z-10 mx-auto w-full max-w-lg object-contain h-full"
         >
 
         <!-- Carré flottant -->
@@ -57,7 +58,7 @@
           aria-hidden="true"
         />
         <div
-          class="absolute -left-20 top-40 h-12 w-12 animate-float rounded-xl bg-indigo-400/20"
+          class="absolute -left-10 top-40 h-12 w-12 animate-float rounded-xl bg-indigo-400/20"
           aria-hidden="true"
         />
         <div
@@ -65,10 +66,10 @@
           aria-hidden="true"
         />
       </div>
-    </div>
-    <!-- flèche -->
+      </div>
+         <!-- flèche -->
     <div
-      class="flex justify-center w-full mt-8 transition-opacity duration-300"
+      class="absolute bottom-4 flex justify-center w-full transition-opacity duration-300"
       :style="{ opacity: arrowOpacity }"
     >
       <Icon
@@ -76,6 +77,8 @@
         class="w-16 h-16 animate-bounce text-purple-400"
       />
     </div>
+    </div>
+ 
   </div>
 </template>
 
@@ -129,5 +132,9 @@ const arrowOpacity = computed(() => {
 .animate-gradient {
   background-size: 200% auto;
   animation: gradient 4s linear infinite;
+}
+
+.h-screen-custom {
+  height: calc(100vh - 5rem);
 }
 </style>

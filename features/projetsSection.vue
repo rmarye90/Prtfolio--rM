@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen-custom bg-slate-800">
+  <section id="projects" class="container mx-auto px-4 py-12 h-screen-custom">
     <h1 class=" text-stone-100">Projets</h1>
   </section>
 </template>
