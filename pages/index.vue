@@ -4,7 +4,7 @@
     <div
       class="flex min-h-[calc(100vh-200px)] items-center justify-between gap-8"
     >
-      <!-- Conteneur de gauche pour le texte -->
+    <!-- Conteneur de gauche pour le texte -->
       <div class="w-1/2 space-y-6">
         <h1 class="font-parkinsans text-8xl">
           <span
@@ -17,7 +17,7 @@
           Frontend passionné par la création d'expériences numériques uniques
         </p>
 
-        <!-- boutons -->
+    <!-- boutons -->
         <div class="flex gap-4 pt-6">
           <NuxtLink
             to="/projects"
@@ -35,7 +35,7 @@
       </div>
 
       <div class="relative w-1/2">
-        <!-- Cercle bg image -->
+    <!-- Cercle bg image -->
         <div
           class="absolute right-10 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-indigo-600/10"
           aria-hidden="true"
@@ -44,14 +44,14 @@
           class="absolute bottom-0 left-5 h-[400px] w-[400px] -translate-y-1/4 rounded-full bg-purple-600/10"
           aria-hidden="true"
         />
-        <!-- Iamge perso -->
+    <!-- Iamge perso -->
         <img
           src="../assets/meTwo.png"
           alt="Photo de profil"
           class="relative z-10 mx-auto h-auto w-full max-w-lg object-contain"
         >
 
-        <!-- Carré flottant -->
+    <!-- Carré flottant -->
         <div
           class="absolute -right-4 top-20 h-12 w-12 animate-float rounded-xl bg-purple-400/20"
           aria-hidden="true"
@@ -66,6 +66,7 @@
         />
       </div>
     </div>
+    <!-- flèche -->
     <div class="flex justify-center w-full mt-8">
       <Icon
         name="memory:arrow-down-bold"
