@@ -65,14 +65,14 @@
           aria-hidden="true"
         />
       </div>
-    </div> 
-    <Icon
-    name="memory:arrow-down-bold"   
-    size="100"
-    class="animate-bounce w-6 h-6 mx-auto"
-  />
+    </div>
+    <div class="flex justify-center w-full mt-8">
+      <Icon
+        name="memory:arrow-down-bold"
+        class="w-16 h-16 animate-bounce text-purple-400"
+      />
+    </div>
   </div>
-
 </template>
 
 <style>
