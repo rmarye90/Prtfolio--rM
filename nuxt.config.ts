@@ -6,16 +6,10 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/eslint",
     "@nuxt/fonts",
-    "nuxt-headlessui",
-    "@nuxtjs/tailwindcss",
-    "@nuxt/image",
-    "@nuxt/icon"
-  ],
-  fonts: {
-    families: [
-      { name: 'afterSmile', provider: 'local' },
-      { name: 'poppins', provider: 'local' },
-      { name: 'parkinsans', provider: 'local' },
-    ]
+  "nuxt-headlessui",
+  "@nuxtjs/tailwindcss",
+  "@nuxt/image",
+  "@nuxt/icon"
+  ]
   }
-});
+)

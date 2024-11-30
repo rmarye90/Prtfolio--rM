@@ -3,16 +3,13 @@
     <header class="fixed top-0 w-full bg-slate-800/95 backdrop-blur-sm z-50">
       <nav class="flex h-20 items-center justify-between px-12">
         <div class="relative w-1/4">
-          <NuxtLink to="/" class="group relative flex items-center">
+          <NuxtLink to="/" class="group relative flex items-center w-52 h-28">
             <NuxtImg
               src="/logo.png"
               alt="logo"
               width="250"
               height="250"
               class="relative z-10 transition-transform hover:scale-105"
-            />
-            <span
-              class="absolute -bottom-1 left-0 h-3 w-0 bg-indigo-500/20 transition-all duration-300 group-hover:w-full"
             />
           </NuxtLink>
         </div>

@@ -17,6 +17,7 @@
   },
   "packageManager": "pnpm@9.3.0+sha1.d4f1da7af76dbdb4ab1a08f6b5add602ffad6fd4",
   "devDependencies": {
+    "@iconify-json/memory": "^1.2.1",
     "@nuxt/eslint": "^0.7.1",
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/icon": "^1.9.0",
