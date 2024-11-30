@@ -2,6 +2,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  content: ["./**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
       fontFamily: {
         poppins: ["poppins"],
