@@ -13,6 +13,7 @@
               class="relative z-10 transition-transform hover:scale-105"
             />
           </NuxtLink>
+          <span class="absolute -bottom-1 left-0 h-3 w-0 bg-indigo-500/20 transition-all duration-300 group-hover:w-full" />
         </div>
         <div class="flex-1 flex justify-center font-parkinsans">
           <div class="flex gap-20">
@@ -66,8 +67,8 @@
 
 <script setup lang="ts">
 const navigationLinks = [
-  { name: "About", path: "#about" },
   { name: "Projects", path: "#projects" },
+  { name: "About", path: "#about" },
   { name: "Contact", path: "#contact" },
 ];
 </script>

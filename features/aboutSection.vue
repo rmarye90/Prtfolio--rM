@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="container mx-auto px-4 py-12" >
+  <div id="about" class="container mx-auto px-4 py-12 h-screen-section" >
     <h1 class="font-parkinsans text-8xl">
       <span
         class="animate-gradient bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
@@ -28,3 +28,9 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.h-screen-custom {
+    height: calc(100vh - 5rem);
+    }
+</style>
