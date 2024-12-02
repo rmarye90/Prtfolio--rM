@@ -71,4 +71,5 @@ const navigationLinks = [
   { name: "About", path: "#about" },
   { name: "Contact", path: "#contact" },
 ];
+
 </script>

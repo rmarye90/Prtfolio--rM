@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="container mx-auto px-4 py-12 h-screen-section" >
+  <div id="about" class="container mx-auto px-4 py-12 h-screen-custom" >
     <h1 class="font-parkinsans text-8xl">
       <span
         class="animate-gradient bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
