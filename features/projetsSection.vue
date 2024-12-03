@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import ProjectCards from '../components/projectCards.vue';
+</script>
+
 <template>
   <section id="projects" class="scroll-mt-24 h-screen-custom">
-    <h1 class=" text-stone-100">Projets</h1>
+    <ProjectCards/>
   </section>
 </template>
 
