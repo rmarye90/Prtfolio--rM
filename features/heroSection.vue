@@ -72,10 +72,12 @@
       class="absolute bottom-4 flex justify-center w-full transition-opacity duration-300"
       :style="{ opacity: arrowOpacity }"
     >
+    <NuxtLink to="#projects">
       <Icon
         name="memory:arrow-down-bold"
         class="w-16 h-16 animate-bounce text-purple-400"
       />
+      </NuxtLink>
     </div>
     </div>
  
