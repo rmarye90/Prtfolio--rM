@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-12">
+  <div class="container py-12">
     <!-- Section principale avec l'image -->
     <div
       class="flex flex-col min-h-[calc(100vh-80px)] items-center justify-center gap-8"

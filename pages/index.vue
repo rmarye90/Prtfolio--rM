@@ -6,7 +6,7 @@ import ContactSection from "../features/contactSection.vue";
 </script>
 
 <template>
-  <div>
+  <div class="mx-auto p-12">
     <HeroSection />
     <ProjetsSection />
     <AboutSection />
