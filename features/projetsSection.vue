@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CubeFloat from "../components/cubeFloat.vue";
 import ProjectCards from "../components/projectCards.vue";
 </script>
 
@@ -24,24 +25,24 @@ import ProjectCards from "../components/projectCards.vue";
         aria-hidden="true"
       />
       <!-- cube flottant -->
-      <div
-        class="absolute left-96 top-36 h-12 w-12 animate-float rounded-xl bg-purple-400/20"
+      <CubeFloat
+        class="absolute left-96 top-36 bg-purple-400/20"
         aria-hidden="true"
       />
-      <div
-        class="absolute left-60 top-10 h-12 w-12 animate-float rounded-xl bg-indigo-400/20"
+      <CubeFloat
+        class="absolute left-60 top-10 bg-indigo-400/20"
         aria-hidden="true"
       />
-      <div
-        class="absolute right-20 -bottom-10 h-12 w-12 animate-float rounded-xl bg-fuchsia-400/20"
+      <CubeFloat
+        class="absolute right-20 -bottom-10 bg-fuchsia-400/20"
         aria-hidden="true"
       />
-      <div
-        class="absolute right-80 bottom-8 h-12 w-12 animate-float rounded-xl bg-pink-400/20"
+      <CubeFloat
+        class="absolute right-80 bottom-8 bg-pink-400/20"
         aria-hidden="true"
       />
-      <div
-        class="absolute right-80 -top-10 h-12 w-12 animate-float rounded-xl bg-fuchsia-800/20"
+      <CubeFloat
+        class="absolute right-80 -top-10 bg-fuchsia-800/20"
         aria-hidden="true"
       />
       <!--component cards projects-->
