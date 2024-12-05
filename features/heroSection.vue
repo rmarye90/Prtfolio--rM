@@ -52,7 +52,7 @@
           class="relative z-10 mx-auto w-full max-w-lg object-contain h-full"
         >
 
-        <!-- Carré flottant -->
+        <!-- Cube flottant -->
         <div
           class="absolute -right-4 top-20 h-12 w-12 animate-float rounded-xl bg-purple-400/20"
           aria-hidden="true"

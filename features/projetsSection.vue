@@ -23,6 +23,7 @@ import ProjectCards from "../components/projectCards.vue";
         class="absolute -bottom-1 left-80 h-[250px] w-[250px] -translate-y-1/4 rounded-full bg-pink-600/10"
         aria-hidden="true"
       />
+      <!-- cube flottant -->
       <div
         class="absolute left-96 top-36 h-12 w-12 animate-float rounded-xl bg-purple-400/20"
         aria-hidden="true"
@@ -43,6 +44,7 @@ import ProjectCards from "../components/projectCards.vue";
         class="absolute right-80 -top-10 h-12 w-12 animate-float rounded-xl bg-fuchsia-800/20"
         aria-hidden="true"
       />
+      <!--component cards projects-->
       <ProjectCards />
     </div>
   </section>
