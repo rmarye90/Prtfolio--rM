@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute h-12 w-12 animate-float rounded-xl hover:animate-float-fast cursor-pointer transition-all duration-300 smooth-float" aria-hidden="true" />
+  <div class="absolute h-12 w-12 animate-float rounded-xl hover:animate-float-fast cursor-grabbing transition-all duration-300 smooth-float" aria-hidden="true" />
 </template>
 
 <style scoped>
