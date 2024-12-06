@@ -53,16 +53,16 @@
         >
 
         <!-- Cube flottant -->
-        <div
-          class="absolute -right-4 top-20 h-12 w-12 animate-float rounded-xl bg-purple-400/20"
+        <CubeFloat
+          class="-right-4 top-20 h-12 w-12rounded-xl bg-purple-400/20"
           aria-hidden="true"
         />
-        <div
-          class="absolute -left-10 top-40 h-12 w-12 animate-float rounded-xl bg-indigo-400/20"
+        <CubeFloat
+          class="-left-10 top-40 h-12 w-12 rounded-xl bg-indigo-400/20"
           aria-hidden="true"
         />
-        <div
-          class="absolute right-20 top-100 h-12 w-12 animate-float rounded-xl bg-fuchsia-400/20"
+        <CubeFloat
+          class="right-20 top-100 h-12 w-12 rounded-xl bg-fuchsia-400/20"
           aria-hidden="true"
         />
       </div>
@@ -87,6 +87,7 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
 import { computed } from 'vue'
+import CubeFloat from '../components/cubeFloat.vue';
 
 // Récupère la position du scroll
 const { y } = useWindowScroll()
@@ -120,15 +121,6 @@ const arrowOpacity = computed(() => {
   100% {
     background-position: 0% 50%;
   }
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-delay {
-  animation: float 6s ease-in-out infinite;
-  animation-delay: 2s;
 }
 
 .animate-gradient {

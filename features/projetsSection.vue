@@ -26,23 +26,23 @@ import ProjectCards from "../components/projectCards.vue";
       />
       <!-- cube flottant -->
       <CubeFloat
-        class="left-96 top-36 bg-purple-400/20"
+        class="left-96 top-36 bg-purple-400/20 hover:bg-purple-400/30"
         aria-hidden="true"
       />
       <CubeFloat
-        class="left-60 top-10 bg-indigo-400/20"
+        class="left-60 top-10 bg-indigo-400/20 hover:bg-indigo-400/30"
         aria-hidden="true"
       />
       <CubeFloat
-        class="right-20 -bottom-10 bg-fuchsia-400/20"
+        class="right-20 -bottom-10 bg-fuchsia-400/20 hover:bg-fuchsia-400/30"
         aria-hidden="true"
       />
       <CubeFloat
-        class="right-96 bottom-10 bg-pink-400/20"
+        class="right-96 bottom-10 bg-pink-400/20 hover:bg-pink-400/30"
         aria-hidden="true"
       />
       <CubeFloat
-        class="right-80 top-8 bg-fuchsia-800/20"
+        class="right-80 top-8 bg-fuchsia-800/20 hover:bg-fuchsia-800/30"
         aria-hidden="true"
       />
       <!--component cards projects-->
