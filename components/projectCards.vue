@@ -27,9 +27,8 @@
           <!-- Bordure avec effet de brillance -->
           <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-purple-500/20 group-hover:ring-purple-500/40 transition-all duration-300" />
 
-          <!-- Contenu -->
           <div class="flex flex-col gap-2 transition-transform duration-300 group-hover:translate-y-2">
-            <!-- Technologies utilisées -->
+            <!-- Techno utilisées -->
             <div class="flex gap-2 flex-wrap">
               <span 
                 v-for="tech in post.technologies" 
@@ -45,12 +44,12 @@
               {{ post.title }}
             </h2>
 
-            <!-- Description -->
+            <!-- Description du projet-->
             <p class="text-sm text-gray-300 line-clamp-2">
               {{ post.description }}
             </p>
 
-            <!-- Lien avec effet -->
+            <!-- Lien vers le projet -->
             <a 
               :href="post.href"
               class="mt-4 inline-flex items-center text-purple-400 text-sm hover:text-purple-300 transition-colors duration-300"
