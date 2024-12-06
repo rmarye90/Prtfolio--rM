@@ -34,11 +34,11 @@ import ProjectCards from "../components/projectCards.vue";
         aria-hidden="true"
       />
       <CubeFloat
-        class="right-20 -bottom-32 bg-fuchsia-400/20"
+        class="right-20 -bottom-10 bg-fuchsia-400/20"
         aria-hidden="true"
       />
       <CubeFloat
-        class="right-80 -bottom-8 bg-pink-400/20"
+        class="right-96 bottom-10 bg-pink-400/20"
         aria-hidden="true"
       />
       <CubeFloat
