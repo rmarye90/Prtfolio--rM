@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@headlessui/vue':
+    specifier: ^1.7.23
+    version: 1.7.23(vue@3.5.13)
   '@vueuse/core':
     specifier: ^12.0.0
     version: 12.0.0(typescript@5.7.2)
@@ -774,7 +777,6 @@ packages:
     dependencies:
       '@tanstack/vue-virtual': 3.11.0(vue@3.5.13)
       vue: 3.5.13(typescript@5.7.2)
-    dev: true
 
   /@iconify-json/memory@1.2.1:
     resolution: {integrity: sha512-89z4b1mJriYsuewCmFDGzlM92Qo6XVBSrBeS2VsG4mofSAJJFnWogKxXJAJfAaHk+3uNpGkYaL0ObCo2nHuxQg==}
@@ -1720,7 +1722,6 @@ packages:
 
   /@tanstack/virtual-core@3.10.9:
     resolution: {integrity: sha512-kBknKOKzmeR7lN+vSadaKWXaLS0SZZG+oqpQ/k80Q6g9REn6zRHS/ZYdrIzHnpHgy/eWs00SujveUN/GJT2qTw==}
-    dev: true
 
   /@tanstack/vue-virtual@3.11.0(vue@3.5.13):
     resolution: {integrity: sha512-AxL1wVbAhBk63MFJUaTcOnotF88uHY1bRq88cDTY2kEuXy856zj/d5oqv7C0kzTjUnF/omGjzHcZ5BuYgvjHhQ==}
@@ -1729,7 +1730,6 @@ packages:
     dependencies:
       '@tanstack/virtual-core': 3.10.9
       vue: 3.5.13(typescript@5.7.2)
-    dev: true
 
   /@trysound/sax@0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}

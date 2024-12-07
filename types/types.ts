@@ -7,4 +7,6 @@ export interface Project {
   technologies: string[];
   status: "in-progress" | "completed" | "maintenance";
   githubUrl: string;
+  longDescription?: string;
+  features?: string[];
 }
