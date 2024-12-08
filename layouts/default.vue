@@ -5,12 +5,12 @@
     <header class="fixed top-0 z-50 w-full bg-slate-800/95 backdrop-blur-sm">
       <nav class="flex h-20 items-center justify-between px-12">
         <div class="relative w-1/4">
-          <NuxtLink to="/" class="group relative flex w-full items-center">
+          <NuxtLink to="/" class="group relative flex w-full items-center z-50">
             <NuxtImg
               src="/logo.png"
               alt="logo"
               width="150px"
-              class="relative z-10 transition-transform hover:scale-105"
+              class="relative z-50 transition-transform hover:scale-105"
             />
           </NuxtLink>
           <span
