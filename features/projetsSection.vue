@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import CubeFloat from "../components/cubeFloat.vue";
 import ProjectCards from "../components/projectCards.vue";
 </script>
 
