@@ -1,17 +1,17 @@
 # Fichier: /components/projectCards.vue
 
 <template>
-  <div class="py-24 sm:py-32">
+  <div class="py-12 sm:py-16">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h1
-          class="text-4xl font-semibold font-parkinsans tracking-tight text-indigo-500 sm:text-5xl"
+          class="!text-8xl font-semibold font-parkinsans tracking-tight text-indigo-500 sm:text-5xl"
         >
           My Projects
         </h1>
       </div>
       <div
-        class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        class="mx-auto mt-8 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
       >
         <article
           v-for="post in posts"
