@@ -28,3 +28,8 @@ export interface SkillsData {
   frontend: Skill[]
   tools: Skill[]
 }
+
+export interface BookingTime {
+  date: Date;
+  time: string;
+}
