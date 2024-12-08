@@ -5,7 +5,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h1
-          class="!text-8xl font-semibold font-parkinsans tracking-tight text-indigo-500 sm:text-5xl"
+          class="font-parkinsans !text-8xl font-semibold tracking-tight text-indigo-500 sm:text-5xl"
         >
           My Projects
         </h1>
@@ -16,13 +16,13 @@
         <article
           v-for="post in posts"
           :key="post.id"
-          class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 group transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20"
+          class="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/20 sm:pt-48 lg:pt-80"
         >
           <!-- Badge de statut -->
-          <div class="absolute top-4 left-4 z-10">
+          <div class="absolute left-4 top-4 z-10">
             <span
               :class="[
-                'px-3 py-1 text-xs font-medium rounded-full backdrop-blur-sm',
+                'rounded-full px-3 py-1 text-xs font-medium backdrop-blur-sm',
                 {
                   'bg-emerald-500/20 text-emerald-200':
                     post.status === 'completed',
@@ -49,18 +49,18 @@
 
           <!-- Bordure avec effet de brillance -->
           <div
-            class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-purple-500/20 group-hover:ring-purple-500/40 transition-all duration-300"
+            class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-purple-500/20 transition-all duration-300 group-hover:ring-purple-500/40"
           />
 
           <div
             class="flex flex-col gap-2 transition-transform duration-300 group-hover:translate-y-2"
           >
             <!-- Techno utilisées -->
-            <div class="flex gap-2 flex-wrap">
+            <div class="flex flex-wrap gap-2">
               <span
                 v-for="tech in post.technologies"
                 :key="tech"
-                class="px-2 py-1 text-xs rounded-full bg-purple-500/20 text-purple-200 backdrop-blur-sm"
+                class="rounded-full bg-purple-500/20 px-2 py-1 text-xs text-purple-200 backdrop-blur-sm"
               >
                 {{ tech }}
               </span>
@@ -72,7 +72,7 @@
             </h2>
 
             <!-- Description du projet-->
-            <p class="text-sm text-gray-300 line-clamp-2">
+            <p class="line-clamp-2 text-sm text-gray-300">
               {{ post.description }}
             </p>
 
@@ -80,12 +80,12 @@
             <div class="mt-4 flex items-center gap-4">
               <a
                 :href="post.href"
-                class="inline-flex items-center text-purple-400 text-sm hover:text-purple-300 transition-colors duration-300"
+                class="inline-flex items-center text-sm text-purple-400 transition-colors duration-300 hover:text-purple-300"
               >
                 Voir le projet
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 w-4 ml-1 transition-transform duration-300 group-hover:translate-x-1"
+                  class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -104,10 +104,10 @@
                 :href="post.githubUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center text-gray-400 text-sm hover:text-gray-300 transition-colors duration-300"
+                class="inline-flex items-center text-sm text-gray-400 transition-colors duration-300 hover:text-gray-300"
               >
                 <svg
-                  class="h-5 w-5 mr-1"
+                  class="mr-1 h-5 w-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -125,11 +125,11 @@
             <!-- Ajoutez ce bouton -->
             <button
               @click="openModal(post)"
-              class="inline-flex items-center text-blue-400 text-sm hover:text-blue-300 transition-colors duration-300"
+              class="inline-flex items-center text-sm text-blue-400 transition-colors duration-300 hover:text-blue-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 mr-1"
+                class="mr-1 h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

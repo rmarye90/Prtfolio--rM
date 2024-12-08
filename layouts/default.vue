@@ -1,11 +1,11 @@
 <template>
   <!-- Container principal -->
-  <div class="bg-slate-800 h-screen text-stone-100">
+  <div class="h-screen bg-slate-800 text-stone-100">
     <!-- Header -->
-    <header class="fixed top-0 w-full bg-slate-800/95 backdrop-blur-sm z-50">
+    <header class="fixed top-0 z-50 w-full bg-slate-800/95 backdrop-blur-sm">
       <nav class="flex h-20 items-center justify-between px-12">
         <div class="relative w-1/4">
-          <NuxtLink to="/" class="group relative flex items-center w-full">
+          <NuxtLink to="/" class="group relative flex w-full items-center">
             <NuxtImg
               src="/logo.png"
               alt="logo"
@@ -13,9 +13,11 @@
               class="relative z-10 transition-transform hover:scale-105"
             />
           </NuxtLink>
-          <span class="absolute -bottom-1 left-0 h-3 w-0 bg-indigo-500/20 transition-all duration-300 group-hover:w-full" />
+          <span
+            class="absolute -bottom-1 left-0 h-3 w-0 bg-indigo-500/20 transition-all duration-300 group-hover:w-full"
+          />
         </div>
-        <div class="flex-1 flex justify-center font-parkinsans">
+        <div class="flex flex-1 justify-center font-parkinsans">
           <div class="flex gap-20">
             <NuxtLink
               v-for="link in navigationLinks"
@@ -31,7 +33,7 @@
           </div>
         </div>
         <!--réseaux sociaux -->
-        <div class="w-1/4 flex justify-end gap-6">
+        <div class="flex w-1/4 justify-end gap-6">
           <a
             href="https://github.com/rmarye90"
             target="_blank"
@@ -71,5 +73,4 @@ const navigationLinks = [
   { name: "About", path: "#about" },
   { name: "Contact", path: "#contact" },
 ];
-
 </script>

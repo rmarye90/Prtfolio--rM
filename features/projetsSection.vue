@@ -5,7 +5,7 @@ import ProjectCards from "../components/projectCards.vue";
 
 <template>
   <!--components projectsCards-->
-  <section id="projects" class="scroll-mt-24 h-screen-custom">
+  <section id="projects" class="h-screen-custom scroll-mt-24">
     <!-- Cercle bg image -->
     <div class="relative">
       <div
@@ -34,11 +34,11 @@ import ProjectCards from "../components/projectCards.vue";
         aria-hidden="true"
       />
       <CubeFloat
-        class="right-20 -bottom-20 bg-fuchsia-400/20 hover:bg-fuchsia-400/30"
+        class="-bottom-20 right-20 bg-fuchsia-400/20 hover:bg-fuchsia-400/30"
         aria-hidden="true"
       />
       <CubeFloat
-        class="right-96 -bottom-5 bg-pink-400/20 hover:bg-pink-400/30"
+        class="-bottom-5 right-96 bg-pink-400/20 hover:bg-pink-400/30"
         aria-hidden="true"
       />
       <CubeFloat

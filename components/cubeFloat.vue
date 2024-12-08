@@ -1,5 +1,8 @@
 <template>
-  <div class="absolute h-12 w-12 animate-float rounded-xl hover:animate-float-fast cursor-grabbing transition-all duration-300 smooth-float" aria-hidden="true" />
+  <div
+    class="hover:animate-float-fast smooth-float absolute h-12 w-12 animate-float cursor-grabbing rounded-xl transition-all duration-300"
+    aria-hidden="true"
+  />
 </template>
 
 <style scoped>
@@ -13,7 +16,8 @@
 }
 
 @keyframes smoothFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
