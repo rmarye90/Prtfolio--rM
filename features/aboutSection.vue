@@ -1,22 +1,10 @@
 <script setup lang="ts">
 import SkillsSection from "../components/skills/SkillsSection.vue";
 import ExperienceCard from "../components/experience/ExperienceCard.vue";
+import  type { Experience, SkillsData } from "../types/types";
 
-interface Skill {
-  name: string;
-  icon: string;
-  category: "frontend" | "backend" | "tools" | "other";
-}
 
-interface Experience {
-  title: string;
-  company: string;
-  period: string;
-  description: string;
-}
-
-// Data qui pourrait être déplacée dans un composable useSkills
-const skillsData = {
+const skillsData: SkillsData = {
   frontend: [
     {
       name: "HTML5",
@@ -46,11 +34,14 @@ const skillsData = {
     },
   ],
   tools: [
-    { name: 'Git', icon: 'mdi:git', category: 'tools' },
-    { name: 'VS Code', icon: 'vscode-icons:file-type-vscode', category: 'tools' },
-    { name: 'pnpm', icon: 'vscode-icons:file-type-pnpm', category: 'tools' },
+    { name: "Git", icon: "mdi:git", category: "tools" },
+    {
+      name: "VS Code",
+      icon: "vscode-icons:file-type-vscode",
+      category: "tools",
+    },
+    { name: "pnpm", icon: "vscode-icons:file-type-pnpm", category: "tools" },
   ],
-
 };
 
 // Data qui pourrait être déplacée dans un composable useExperiences
@@ -120,8 +111,8 @@ const experiences: Experience[] = [
 
       <!-- Éléments décoratifs -->
       <div class="relative">
-        <CubeFloat class="absolute -left-4 top-20 bg-purple-400/20" />
-        <CubeFloat class="absolute bottom-40 right-10 bg-indigo-400/20" />
+        <CubeFloat class="absolute -top-10 left-20 bg-purple-400/20" />
+        <CubeFloat class="absolute -top-36 left-96 bg-indigo-400/20" />
       </div>
     </div>
   </section>

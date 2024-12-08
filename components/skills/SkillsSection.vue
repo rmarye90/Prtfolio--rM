@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import SkillCard from './SkillCard.vue'
-
-interface Skill {
-  name: string
-  icon: string
-  category: 'frontend' | 'backend' | 'tools' | 'other'
-}
+import type { Skill } from '../../types/types'
 
 interface Props {
   title: string
