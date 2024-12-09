@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import SkillsSection from "../components/skills/SkillsSection.vue";
 import ExperienceCard from "../components/experience/ExperienceCard.vue";
-import  type { Experience, SkillsData } from "../types/types";
-
+import type { Experience, SkillsData } from "../types/types";
 
 const skillsData: SkillsData = {
   frontend: [
@@ -70,7 +69,25 @@ const experiences: Experience[] = [
           numériques
         </p>
       </div>
-
+      <!-- Cercle bg image -->
+      <div class="relative">
+        <div
+          class="absolute top-[26rem] right-[30rem] h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-indigo-600/10"
+          aria-hidden="true"
+        />
+        <div
+          class="bottom-30 absolute -left-16 h-[400px] w-[400px] -translate-y-1/4 rounded-full bg-purple-600/10"
+          aria-hidden="true"
+        />
+        <div
+          class="absolute right-[27rem] top-[35rem] h-[150px] w-[150px] -translate-y-1/2 rounded-full bg-fuchsia-600/10"
+          aria-hidden="true"
+        />
+        <div
+          class="absolute -bottom-32 left-56 h-[250px] w-[250px] -translate-y-1/4 rounded-full bg-pink-600/10"
+          aria-hidden="true"
+        />
+      </div>
       <!-- Contenu principal -->
       <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <!-- Colonne gauche -->
@@ -113,6 +130,7 @@ const experiences: Experience[] = [
       <div class="relative">
         <CubeFloat class="absolute -top-10 left-20 bg-purple-400/20" />
         <CubeFloat class="absolute -top-36 left-96 bg-indigo-400/20" />
+        <CubeFloat class="absolute bottom-[38rem] right-[10rem] bg-fuchsia-400/20" />
       </div>
     </div>
   </section>
