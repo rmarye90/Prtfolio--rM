@@ -130,7 +130,7 @@ const experiences: Experience[] = [
       <div class="relative">
         <CubeFloat class="absolute -top-10 left-20 bg-purple-400/20" />
         <CubeFloat class="absolute -top-36 left-96 bg-indigo-400/20" />
-        <CubeFloat class="absolute bottom-[38rem] right-[10rem] bg-fuchsia-400/20" />
+        <CubeFloat class="absolute bottom-[43rem] right-[10rem] bg-fuchsia-400/20" />
       </div>
     </div>
   </section>

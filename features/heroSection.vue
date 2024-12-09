@@ -17,7 +17,20 @@
           <p class="font-parkinsans text-xl text-gray-300">
             Frontend passionné par la création d'expériences numériques uniques
           </p>
-
+          <div class="pt-6">
+            <h3 class="text-lg text-gray-300 mb-4">Technologies favorites</h3>
+            <div class="flex flex-wrap gap-3">
+              <div v-for="tech in technologies" 
+                   :key="tech.name" 
+                   class="group relative flex items-center gap-2 rounded-xl bg-gray-800/50 px-4 py-2 transition-all duration-300 hover:bg-gray-700/50">
+                <Icon 
+                  :name="tech.icon" 
+                  class="h-5 w-5 text-gray-400 group-hover:text-purple-400"
+                />
+                <span class="text-sm text-gray-300 group-hover:text-white">{{ tech.name }}</span>
+              </div>
+            </div>
+          </div>
           <!-- boutons -->
           <div class="flex gap-4 pt-6">
             <NuxtLink
@@ -87,6 +100,23 @@
 import { useWindowScroll } from "@vueuse/core";
 import { computed } from "vue";
 import CubeFloat from "../components/cubeFloat.vue";
+
+
+interface Technology {
+  name: string
+  icon: string  // Modifié pour correspondre au format des icônes Nuxt
+}
+
+const technologies: Technology[] = [
+  { name: 'Vue.js', icon: 'logos:vue' },
+  { name: 'Nuxt', icon: 'logos:nuxt-icon' },
+  { name: 'TypeScript', icon: 'logos:typescript-icon' },
+  { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+  { name: 'JavaScript', icon: 'logos:javascript' },
+  { name: 'HTML5', icon: 'logos:html-5' },
+  { name: 'CSS3', icon: 'logos:css-3' },
+  { name: 'Git', icon: 'logos:git-icon' }
+]
 
 // Récupère la position du scroll
 const { y } = useWindowScroll();
