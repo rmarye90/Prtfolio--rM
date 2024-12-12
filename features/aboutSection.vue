@@ -1,7 +1,34 @@
 <script setup lang="ts">
 import SkillsSection from "../components/skills/SkillsSection.vue";
 import ExperienceCard from "../components/experience/ExperienceCard.vue";
+import CertificationSection from "../components/CertificationSection.vue";
+import OpenSourceSection from "../components/OpenSourceSection.vue";
 import type { Experience, SkillsData } from "../types/types";
+
+const certifications = [
+  {
+    title: "Vue.js 3 Advanced",
+    platform: "Vue School",
+    date: "Décembre 2023",
+    imageUrl:
+      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0ibm9uZSIgZD0ibTAgOC45MzRsNDkuODU0LjE1OGwxNC4xNjcgMjQuNDdsMTQuNDMyLTI0LjQ3TDEyOCA4LjkzNWwtNjMuODM0IDExMC4xNHptMTI2Ljk4LjYzN2wtMjQuMzYuMDJsLTM4LjQ3NiA2Ni4wNTNMMjUuNjkxIDkuNTkyTC45NDIgOS41NzJsNjMuMjExIDEwNy44OXptLTI1LjE0OS0uMDA4bC0yMi43NDUuMTY4bC0xNS4wNTMgMjQuNjQ3TDQ5LjIxNiA5LjczbC0yMi43OTQtLjE2OGwzNy43MzEgNjQuNDc2em0tNzUuODM0LS4xN2wyMy4wMDIuMDA5bS0yMy4wMDItLjAxbDIzLjAwMi4wMSIvPjxwYXRoIGZpbGw9IiMzNTQ5NWUiIGQ9Im0yNS45OTcgOS4zOTNsMjMuMDAyLjAwOUw2NC4wMzUgMzQuMzZMNzkuMDE4IDkuNDA0TDEwMiA5LjM5OEw2NC4xNSA3NS4wNTN6Ii8+PHBhdGggZmlsbD0iIzQxYjg4MyIgZD0ibS45MSA5LjU2OWwyNS4wNjctLjE3MmwzOC4xNSA2NS42NTlMMTAxLjk4IDkuNDAxbDI1LjExLjAyNmwtNjIuOTY2IDEwOC4wNnoiLz48L3N2Zz4=",
+    verificationUrl: "https://vueschool.io/certificates/...",
+    skills: ["Vue.js", "Composition API", "TypeScript"],
+  },
+  // Ajoutez vos autres certifications
+];
+
+const contributions = [
+  {
+    projectName: "Nuxt.js",
+    projectUrl: "https://github.com/nuxt/nuxt",
+    description: "Amélioration de la documentation française du framework",
+    contributionType: "documentation",
+    pullRequestUrl: "https://github.com/nuxt/nuxt/pull/...",
+    dateContributed: "Janvier 2024",
+  },
+  // Ajoutez vos autres contributions
+];
 
 const skillsData: SkillsData = {
   frontend: [
@@ -72,7 +99,7 @@ const experiences: Experience[] = [
       <!-- Cercle bg image -->
       <div class="relative">
         <div
-          class="absolute top-[26rem] right-[30rem] h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-indigo-600/10"
+          class="absolute right-[30rem] top-[26rem] h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-indigo-600/10"
           aria-hidden="true"
         />
         <div
@@ -114,6 +141,11 @@ const experiences: Experience[] = [
               />
             </div>
           </div>
+          <!-- Competences -->
+          <div class="mt-12 space-y-12">
+            <CertificationSection :certifications="certifications" />
+            <OpenSourceSection :contributions="contributions" />
+          </div>
         </div>
 
         <!-- Colonne droite -->
@@ -130,7 +162,9 @@ const experiences: Experience[] = [
       <div class="relative">
         <CubeFloat class="absolute -top-10 left-20 bg-purple-400/20" />
         <CubeFloat class="absolute -top-36 left-96 bg-indigo-400/20" />
-        <CubeFloat class="absolute bottom-[43rem] right-[10rem] bg-fuchsia-400/20" />
+        <CubeFloat
+          class="absolute bottom-[43rem] right-[10rem] bg-fuchsia-400/20"
+        />
       </div>
     </div>
   </section>
