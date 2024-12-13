@@ -33,3 +33,12 @@ export interface BookingTime {
   date: Date;
   time: string;
 }
+
+export interface Contribution {
+  projectName: string
+  projectUrl: string
+  description: string
+  contributionType: 'code' | 'documentation' | 'bug-fix' | 'feature'
+  pullRequestUrl?: string
+  dateContributed: string
+}

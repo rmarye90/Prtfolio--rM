@@ -3,7 +3,7 @@ import SkillsSection from "../components/skills/SkillsSection.vue";
 import ExperienceCard from "../components/experience/ExperienceCard.vue";
 import CertificationSection from "../components/CertificationSection.vue";
 import OpenSourceSection from "../components/OpenSourceSection.vue";
-import type { Experience, SkillsData } from "../types/types";
+import type { Experience, SkillsData, Contribution } from "../types/types";
 
 const certifications = [
   {
@@ -18,7 +18,7 @@ const certifications = [
   // Ajoutez vos autres certifications
 ];
 
-const contributions = [
+const contributions: Contribution[] = [
   {
     projectName: "Nuxt.js",
     projectUrl: "https://github.com/nuxt/nuxt",

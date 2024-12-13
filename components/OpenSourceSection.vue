@@ -1,12 +1,5 @@
 <script setup lang="ts">
-interface Contribution {
-  projectName: string
-  projectUrl: string
-  description: string
-  contributionType: 'code' | 'documentation' | 'bug-fix' | 'feature'
-  pullRequestUrl?: string
-  dateContributed: string
-}
+import type { Contribution } from "../types/types";
 
 interface Props {
   contributions: Contribution[]
