@@ -18,7 +18,7 @@ const handleDateSelect = (booking: BookingTime) => {
 <template>
   <section id="contact" class="scroll-mt-24 min-h-screen">
     <div class="container mx-auto px-4 py-16">
-      <!-- Titre de la section -->
+      <!-- Titre -->
       <div class="mx-auto max-w-2xl text-center mb-16">
         <h1 class="text-4xl font-semibold font-parkinsans tracking-tight text-indigo-500 sm:text-5xl">
           Prenons contact

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
+import { ChevronUpIcon } from '@heroicons/vue/20/solid'
 import SkillsSection from "../components/skills/SkillsSection.vue";
 import ExperienceCard from "../components/experience/ExperienceCard.vue";
 import CertificationSection from "../components/CertificationSection.vue";
@@ -15,7 +17,6 @@ const certifications = [
     verificationUrl: "https://vueschool.io/certificates/...",
     skills: ["Vue.js", "Composition API", "TypeScript"],
   },
-  // Ajoutez vos autres certifications
 ];
 
 const contributions: Contribution[] = [
@@ -27,7 +28,6 @@ const contributions: Contribution[] = [
     pullRequestUrl: "https://github.com/nuxt/nuxt/pull/...",
     dateContributed: "Janvier 2024",
   },
-  // Ajoutez vos autres contributions
 ];
 
 const skillsData: SkillsData = {
@@ -114,34 +114,65 @@ const experiences: Experience[] = [
           class="absolute -bottom-32 left-56 h-[250px] w-[250px] -translate-y-1/4 rounded-full bg-pink-600/10"
           aria-hidden="true"
         />
+              <!-- cube flottant -->
+      <CubeFloat
+        class="left-96 top-36 bg-purple-400/20 hover:bg-purple-400/30"
+        aria-hidden="true"
+      />
+      <CubeFloat
+        class="left-60 top-10 bg-indigo-400/20 hover:bg-indigo-400/30"
+        aria-hidden="true"
+      />
+      <CubeFloat
+        class="-bottom-20 right-20 bg-fuchsia-400/20 hover:bg-fuchsia-400/30"
+        aria-hidden="true"
+      />
+      <CubeFloat
+        class="-bottom-5 right-96 bg-pink-400/20 hover:bg-pink-400/30"
+        aria-hidden="true"
+      />
+      <CubeFloat
+        class="right-80 top-8 bg-fuchsia-800/20 hover:bg-fuchsia-800/30"
+        aria-hidden="true"
+      />
       </div>
       <!-- Contenu principal -->
       <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <!-- Colonne gauche -->
         <div class="space-y-6">
-          <div class="rounded-xl bg-slate-700/50 p-6 backdrop-blur-sm">
-            <h2 class="mb-4 font-parkinsans text-2xl text-purple-400">
-              Mon parcours
-            </h2>
-            <p class="leading-relaxed text-gray-300">
-              Votre histoire, votre passion pour le développement web, et ce qui
-              vous motive.
+          <Disclosure v-slot="{ open }" as="div" class="bg-slate-700/50 rounded-xl" defaultOpen>
+          <DisclosureButton class="flex w-full justify-between rounded-lg px-6 py-4 text-left">
+            <h2 class="text-2xl font-parkinsans text-purple-400">Mon parcours</h2>
+            <ChevronUpIcon
+              :class="[open ? 'rotate-180 transform' : '', 'h-6 w-6 text-purple-400']"
+            />
+          </DisclosureButton>
+          <DisclosurePanel class="px-6 pb-6">
+            <p class="text-gray-300 leading-relaxed">
+              Votre histoire, votre passion pour le développement web, et ce qui vous motive.
             </p>
-          </div>
+          </DisclosurePanel>
+        </Disclosure>
 
-          <div class="rounded-xl bg-slate-700/50 p-6 backdrop-blur-sm">
-            <h2 class="mb-4 font-parkinsans text-2xl text-purple-400">
-              Expérience
-            </h2>
+        <Disclosure v-slot="{ open }" as="div" class="bg-slate-700/50 rounded-xl">
+          <DisclosureButton class="flex w-full justify-between rounded-lg px-6 py-4 text-left">
+            <h2 class="text-2xl font-parkinsans text-purple-400">Expérience</h2>
+            <ChevronUpIcon
+              :class="[open ? 'rotate-180 transform' : '', 'h-6 w-6 text-purple-400']"
+            />
+          </DisclosureButton>
+          <DisclosurePanel class="px-6 pb-6">
             <div class="space-y-4">
-              <ExperienceCard
-                v-for="exp in experiences"
+              <ExperienceCard 
+                v-for="exp in experiences" 
                 :key="exp.title"
                 v-bind="exp"
               />
             </div>
-          </div>
+          </DisclosurePanel>
+        </Disclosure>
           <!-- Competences -->
+           
           <div class="mt-12 space-y-12">
             <CertificationSection :certifications="certifications" />
             <OpenSourceSection :contributions="contributions" />
@@ -157,15 +188,19 @@ const experiences: Experience[] = [
           <SkillsSection title="Outils" :skills="skillsData.tools" />
         </div>
       </div>
-
-      <!-- Éléments décoratifs -->
-      <div class="relative">
-        <CubeFloat class="absolute -top-10 left-20 bg-purple-400/20" />
-        <CubeFloat class="absolute -top-36 left-96 bg-indigo-400/20" />
-        <CubeFloat
-          class="absolute bottom-[43rem] right-[10rem] bg-fuchsia-400/20"
-        />
-      </div>
-    </div>
+    </div>  
   </section>
 </template>
+
+<style scoped>
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+</style>
