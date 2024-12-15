@@ -17,7 +17,6 @@ defineProps<Props>()
 
 <template>
   <div class="bg-slate-700/50 rounded-xl p-6 backdrop-blur-sm">
-    <h2 class="text-2xl font-parkinsans text-purple-400 mb-6">Certifications</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div v-for="cert in certifications" 
            :key="cert.title"
