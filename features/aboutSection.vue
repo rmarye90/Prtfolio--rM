@@ -205,10 +205,11 @@ const experiences: Experience[] = [
             <DisclosureButton
               class="flex w-full justify-between rounded-lg px-6 py-4 text-left"
             >
-            <h2 class="text-2xl font-parkinsans text-purple-400 mb-6">Certifications</h2>
-            <CertificationSection :certifications="certifications" />
-            <OpenSourceSection :contributions="contributions" />
-            <ChevronUpIcon
+              <h2 class="font-parkinsans text-2xl text-purple-400">
+                Certifications
+              </h2>
+
+              <ChevronUpIcon
                 :class="[
                   open ? 'rotate-180 transform' : '',
                   'h-6 w-6 text-purple-400',
@@ -216,15 +217,10 @@ const experiences: Experience[] = [
               />
             </DisclosureButton>
             <DisclosurePanel class="px-6 pb-6">
-              <div class="space-y-4">
-                <ExperienceCard
-                  v-for="exp in experiences"
-                  :key="exp.title"
-                  v-bind="exp"
-                />
-              </div>
+              <CertificationSection :certifications="certifications" />
             </DisclosurePanel>
           </Disclosure>
+          <OpenSourceSection :contributions="contributions" />
         </div>
 
         <!-- Colonne droite -->
