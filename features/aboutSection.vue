@@ -99,19 +99,19 @@ const experiences: Experience[] = [
       <!-- Cercle bg image -->
       <div class="relative">
         <div
-          class="absolute right-[30rem] top-[26rem] h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-indigo-600/10"
+          class="absolute right-[220px] top-[26rem] h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-indigo-600/10"
           aria-hidden="true"
         />
         <div
-          class="bottom-30 absolute -left-16 h-[400px] w-[400px] -translate-y-1/4 rounded-full bg-purple-600/10"
+          class="bottom-30 absolute -left-[64px] h-[400px] w-[400px] -translate-y-1/4 rounded-full bg-purple-600/10"
           aria-hidden="true"
         />
         <div
-          class="absolute right-[27rem] top-[35rem] h-[150px] w-[150px] -translate-y-1/2 rounded-full bg-fuchsia-600/10"
+          class="absolute right-[10rem] top-[35rem] h-[150px] w-[150px] -translate-y-1/2 rounded-full bg-fuchsia-600/10"
           aria-hidden="true"
         />
         <div
-          class="absolute -bottom-32 left-56 h-[250px] w-[250px] -translate-y-1/4 rounded-full bg-pink-600/10"
+          class="absolute -bottom-[128px] left-[224px] h-[250px] w-[250px] -translate-y-1/4 rounded-full bg-pink-600/10"
           aria-hidden="true"
         />
         <!-- cube flottant -->
